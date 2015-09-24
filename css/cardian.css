@@ -1,2 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+body, h1, h3, h5 {
+  color: #fff; }
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-size: 60px;
+  font-weight: 500; }
+
+h3 {
+  font-size: 30px;
+  font-weight: 300; }
+
+h5 {
+  font-size: 18px;
+  font-weight: 500; }
+
 header {
-  background: #000 url("../img/header.jpg") no-repeat center center/cover; }
+  background: #000 url("../img/header.jpg") no-repeat center center/cover;
+  color: #fff; }
+  header .container {
+    height: 100%; }
+  header .table {
+    display: table;
+    height: 100%; }
+  header .header-text {
+    display: table-cell;
+    vertical-align: middle; }
+  header .typed {
+    display: inline-block; }
+  header .typed-cursor {
+    display: inline-block;
+    font-size: 60px;
+    margin: 0 10px;
+    color: #00a8ff;
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; }
+
+nav.navbar {
+  position: absolute;
+  top: 50px;
+  z-index: 9500;
+  width: 100vw;
+  transition: all 0.3s ease; }
+
+nav.navbar-fixed-top {
+  z-index: 9499;
+  padding: 25px 0;
+  background: #fff; }
+
+nav.navbar-fixed-top .navbar-nav li a:not(.btn) {
+  color: #bbb; }
+
+nav.navbar-fixed-top .navbar-nav li.active a:not(.btn) {
+  color: #00a8ff !important; }
+
+nav.original {
+  opacity: 1; }
+
+nav.navbar-fixed-top {
+  opacity: 0; }
+
+ul.main-nav li a {
+  text-transform: capitalize; }
+
+.btn.btn-blue {
+  background: #00a8ff; }
+
+section {
+  position: relative; }
+
+.cut-top {
+  content: ' ';
+  position: absolute;
+  top: -80px;
+  width: 0;
+  height: 0;
+  border-top: 80px solid transparent;
+  border-right: 30px solid #fff; }
+
+.intro-tables .intro-table .heading {
+  padding: 30px; }
