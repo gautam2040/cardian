@@ -26,6 +26,8 @@ jQuery(function($){
 		$('section .cut').each(function(){
 			if($(this).hasClass('cut-top'))
 				$(this).css('border-right-width',$(this).parent().width() + "px");
+			if($(this).hasClass('cut-bottom'))
+				$(this).css('border-left-width',$(this).parent().width() + "px");
 		});
 
 		$('.owl-schedule').owlCarousel({
