@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
-body, h1, h3, h5 {
+body, h1, h3, h4, h5 {
   color: #fff; }
 
 body {
@@ -12,6 +12,10 @@ h1 {
 h3 {
   font-size: 30px;
   font-weight: 300; }
+
+h4 {
+  font-size: 24px;
+  font-weight: 400; }
 
 h5 {
   font-size: 18px;
@@ -81,5 +85,82 @@ section {
   border-top: 80px solid transparent;
   border-right: 30px solid #fff; }
 
+.intro-tables {
+  position: relative;
+  top: -130px; }
+
+.intro-tables .intro-table {
+  width: 100%;
+  position: relative;
+  height: 300px;
+  margin: 20px 0; }
+
+.intro-tables .intro-table .bottom {
+  position: absolute;
+  bottom: 0; }
+
+.intro-tables .intro-table-first {
+  background-image: url("../img/table-1.jpg"); }
+
+.intro-tables .intro-table .owl-schedule .schedule-row {
+  padding: 10px 30px; }
+
 .intro-tables .intro-table .heading {
-  padding: 30px; }
+  margin: 0;
+  padding: 30px;
+  text-transform: capitalize; }
+
+.owl-schedule .schedule-row:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+
+.intro-tables .intro-table-hover {
+  background-image: url("../img/table-2.jpg");
+  background-size: cover;
+  transition: background-image 0.3s ease, background-position 0.3s; }
+
+.intro-table-hover h4 {
+  transform: translatey(170px);
+  transition: transform 0.3s; }
+
+.intro-tables .intro-table .small-heading {
+  padding: 0 30px;
+  text-transform: capitalize; }
+
+.intro-table-hover:hover {
+  background-image: url("../img/table-2-hover.jpg");
+  background-position: 50% 50%;
+  background-size: cover; }
+
+.intro-table-hover:hover h5 {
+  opacity: 0; }
+
+.intro-table-hover:hover h4 {
+  transform: translatey(0px); }
+
+.intro-table-hover:hover .expand {
+  opacity: 1;
+  transform: scale(1); }
+
+.btn {
+  font-size: 18px;
+  padding: 15px 30px;
+  border: 2px solid transparent;
+  border-radius: 2px; }
+
+.btn-white-fill {
+  color: #fff;
+  border-color: #fff;
+  background: transparent; }
+
+.intro-table-hover .expand {
+  margin: 30px;
+  margin-top: 120px;
+  transform: scale(0.6);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s; }
+
+.intro-table-third {
+  background-image: url("../img/table-3.jpg"); }
+
+.intro-tables {
+  animation-duration: 1s; }

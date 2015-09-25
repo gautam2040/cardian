@@ -3,6 +3,8 @@ jQuery(function($){
 
 	$(window).load(function(){
 
+		$('.intro-tables').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend');
+
 		$('header').height( $(window).innerHeight() - 40 );
 
 
@@ -25,6 +27,17 @@ jQuery(function($){
 			if($(this).hasClass('cut-top'))
 				$(this).css('border-right-width',$(this).parent().width() + "px");
 		});
+
+		$('.owl-schedule').owlCarousel({
+			singleItem: true,
+			pagination: true
+		});
+		$('.owl-testimonials').owlCarousel({
+			singleItem: true,
+			pagination: true
+		});
+
+
 
 	});
 
